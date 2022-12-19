@@ -1,0 +1,21 @@
+$base-app-colors: (
+  "ba-white": #ffffff,
+  "ba-black": #000000,
+  "ba-secondary": #595959,
+);
+
+$base-app-colors-theme-dark: (
+  "ba-background": #2c2c2c,
+);
+
+:root {
+  @each $name, $color in $base-app-colors {
+    --#{$name}: #{$color};
+  }
+
+  &.dark-mode {
+    @each $name, $color in $base-app-colors-theme-dark {
+      --#{$name}: #{$color};
+    }
+  }
+}

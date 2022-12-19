@@ -1,0 +1,10 @@
+@import "./mixins";
+
+ng-dynamic-form[example] {
+  .group-1 {
+    @include grid-2;
+  }
+  .group-2 {
+    @include grid-4;
+  }
+}

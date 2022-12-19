@@ -1,0 +1,40 @@
+@mixin grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@mixin grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+@mixin grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  @media (max-width: 850px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+@mixin grid-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
